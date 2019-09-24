@@ -5,9 +5,9 @@ import java.util.*;
 
 public class NotesDAO {
 	private Connection connection = null;
-	private String url = System.getenv("jdbc:mysql://172.31.44.51:3306/28a82586fa9c4a19ad1aa28f7fa6gbd2");
-	private String user = System.getenv("4216873195694gf8910f56c57gd0d36b");
-	private String password = System.getenv("2655a7216992414789f42fcdf2g2b39c");
+	String url = System.getenv("mysql_url");
+	String user = System.getenv("mysql_user");
+	String password = System.getenv("mysql_password");
 	public NotesDAO() throws SQLException {
 		 try {
 			Class.forName("com.mysql.jdbc.Driver");
